@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/Flappy_Bird_icon.png">
+
+</head>
+
+<body class="flappy-theme">
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <span>Stepan Kapustiak</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="cv.html" data-i18n="nav_cv">Curriculum</a></li>
+                <li><a href="portfolio-assignments.html" data-i18n="nav_portfolio">Prácticas</a></li>
+                <li><a href="portfolio-syllabus.html" data-i18n="nav_syllabus">Temario</a></li>
+                <li><a href="memory.html" data-i18n="nav_memory">Memoria</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button class="lang-btn" data-lang="es">ES</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ua">UA</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h1 style="text-align: center; margin-bottom: 30px;" data-i18n="cl_title">
+                Carta de Presentación</h1>
+
+            <div class="letter-container reveal active">
+                <div class="letter-header"
+                    style="border-bottom: 4px solid #000; padding-bottom: 20px; margin-bottom: 30px;">
+                    <h2 style="font-size: 1.5rem; text-align: left; margin: 0; color: #fff;">Stepan Kapustiak</h2>
+                    <p data-i18n="cv_role" style="color: var(--mc-green); font-family: var(--font-pixel);">
+                        Dessarrollador Web Junior | Estudiante de DAM
+                    </p>
+                    <p style="color: #888;">kapustakstepan@gmail.com</p>
+                </div>
+
+                <div class="letter-date" style="text-align: right; margin-bottom: 40px;">
+                    <span id="current-date"></span>
+                </div>
+
+                <div class="letter-body" style="line-height: 1.8; text-align: justify; font-size: 1.1rem;">
+                    <p data-i18n="cl_body_2">
+                        Les escribo con gran motivación para presentar mi candidatura al puesto de Junior en Ciberseguridad o Desarrollador Backend. Como estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM), he comprendido que un código no solo debe ser funcional, sino que debe ser robusto, seguro y estar impecablemente construido desde su base.
+                    </p>
+                    <br>
+                    <p data-i18n="cl_body_3">
+                        Mi perfil combina la lógica técnica del backend en Java y Python con una sensibilidad especial por el detalle en el frontend. Un ejemplo de ello es mi proyecto de web con temática navideña, donde implementé animaciones complejas en CSS3 para crear una experiencia de usuario fluida y estética. Para mí, esa misma exigencia por que cada animación y cada línea de estilo sean precisas es la que aplico al revisar la seguridad y la estructura de un sistema; el perfeccionismo visual se traduce en rigor técnico y capacidad analítica para detectar vulnerabilidades.
+                    </p>
+                    <br>
+                    <p data-i18n="cl_body_4">
+                        Me considero un perfil con una mentalidad de detalle total, capaz de auditar código con paciencia y de desarrollar herramientas de automatización eficientes. Al ser mi primer empleo, mi objetivo es absorber su metodología de trabajo y aportar valor y proactividad a su equipo de seguridad desde el primer día.
+                    </p>
+                    <br>
+                    <p data-i18n="cl_sign" style="margin-top: 30px;">Atentamente,</p>
+                </div>
+
+                <div class="signature"
+                    style="margin-top: 40px; font-family: 'Brush Script MT', cursive; font-size: 1.5rem; color: var(--mc-green);">
+                    Stepan Kapustiak
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <button class="mc-btn" onclick="copyToClipboard()" data-i18n="cl_copy">Copiar Texto</button>
+            </div>
+        </section>
+    </main>
+ 
+    <footer>
+        <p data-i18n="footer_rights">&copy; 2026 Stepan Kapustiak.</p>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

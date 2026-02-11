@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/Flappy_Bird_icon.png">
+
+</head>
+
+<body class="flappy-theme">
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+               
+                <!-- Pixelated stroke for visibility -->
+                <span>Stepan Kapustiak</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="portfolio-assignments.html" data-i18n="nav_portfolio">Prácticas</a></li>
+                <li><a href="portfolio-syllabus.html" data-i18n="nav_syllabus">Temario</a></li>
+                <li><a href="memory.html" data-i18n="nav_memory">Memoria</a></li>
+                <li><a href="cover-letter.html" data-i18n="nav_contact">Carta</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button class="lang-btn" data-lang="es">ES</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ua">UA</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h1 style="text-align: center; margin-bottom: 30px;" data-i18n="cv_title">Curriculum</h1>
+
+            <div class="cv-container reveal active">
+                <div class="cv-header"
+                    style="border-bottom: 4px solid #e65100; padding-bottom: 20px; margin-bottom: 30px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    <h2 style="font-size: 1.5rem; color: #e65100; margin: 0;">Stepan Kapustiak
+                    </h2>
+                    <p data-i18n="cv_role"
+                        style="font-family: var(--font-pixel); font-size: 0.7rem; color: #8a5a2b; margin-top: 5px;">
+                        Desarrollador Web Junior | Estudiante de DAM</p>
+                    <p style="font-size: 0.9rem; color: #8a5a2b; margin-top: 5px;">Madrid, Spain | 
+                        kapustakstepan@gmail.com</p>
+                </div>
+
+                <div class="cv-grid" style="display: grid; grid-template-columns: 1fr 2fr; gap: 40px;">
+                    <aside class="cv-sidebar">
+                        <h3 class="cv-section-title" data-i18n="cv_skills" style="color: #e65100; margin-bottom: 20px;">
+                            Habilidades</h3>
+
+                        <p><strong>HTML / CSS</strong></p>
+                        <div style="background: #555; height: 16px; border: 2px solid #000; margin-bottom: 15px;">
+                            <div style="background: #76b400; width: 70%; height: 100%;"></div>
+                        </div>
+
+                        <p><strong>Python</strong></p>
+                        <div style="background: #555; height: 16px; border: 2px solid #000; margin-bottom: 15px;">
+                            <div style="background: #76b400; width: 80%; height: 100%;"></div>
+                        </div>
+
+                        <p><strong>Java</strong></p>
+                        <div style="background: #555; height: 16px; border: 2px solid #000; margin-bottom: 15px;">
+                            <div style="background: #76b400; width: 80%; height: 100%;"></div>
+                        </div>
+
+                        <h3 class="cv-section-title" style="margin-top: 30px; margin-bottom: 15px; color: #e65100;"
+                            data-i18n="cv_langs">Idiomas</h3>
+                        <ul style="list-style-position: inside; color: #8a5a2b;">
+                            <li>Español (B1+)</li>
+                            <li>Inglés (B1)</li>
+                            <li>Uraniano (Nativo)</li>
+                        </ul>
+                    </aside>
+
+                    <div class="cv-content">
+                        <h3 class="cv-section-title" data-i18n="cv_profile"
+                            style="color: #e65100; margin-bottom: 15px;">
+                            Perfil Profesional</h3>
+                        <p style="margin-bottom: 30px; color: #8a5a2b;" data-i18n="cv_profile_text">
+                            Estudiante motivado de Desarrollo de Aplicaciones Multiplataforma con sólida base en
+                            tecnologías web y backend.
+                        </p>
+
+                        <h3 class="cv-section-title" data-i18n="cv_education"
+                            style="color: #e65100; margin-bottom: 20px;">
+                            Formación Académica</h3>
+                        <div style="margin-bottom: 30px; border-left: 4px solid #76b400; padding-left: 15px;">
+                            <h4 style="font-size: 0.9rem; color: #e65100;">Técnico Superior en DAM</h4> <br>
+                            <div style="color: #8a5a2b; font-size: 0.8rem; margin-bottom: 5px;">CES Juan Pablo II | 2025 - Actualidad</div>
+                            <p style="color: #8a5a2b;">Especialización en desarrollo backend y frontend.</p>
+                        </div>
+                        <div style="margin-bottom: 30px; border-left: 4px solid #76b400; padding-left: 15px;">
+                            <h4 style="font-size: 0.9rem; color: #e65100;">Bachillerato Internacional de Ciencias</h4> <br>
+                            <div style="color: #8a5a2b; font-size: 0.8rem; margin-bottom: 5px;">Duvosvit | 2023 - 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <button class="mc-btn" onclick="window.print()" data-i18n="cv_print">🖨️ Descargar / Imprimir</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-i18n="footer_rights">&copy; 2026 Stepan Kapustiak.</p>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

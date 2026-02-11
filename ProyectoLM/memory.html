@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memoria del Proyecto - Stepan Kapustiak</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/Flappy_Bird_icon.png">
+
+    <style>
+        /* Estilos específicos para legibilidad de la Memoria */
+        .mem-content { padding: 40px; line-height: 1.8; text-align: left; }
+        .mem-content h2 { color: #e65100; margin-top: 40px; border-bottom: 3px solid #8a5a2b; padding-bottom: 10px; font-size: 1.2rem; }
+        .mem-content h3 { color: #8a5a2b; margin-top: 25px; font-size: 0.9rem; text-transform: uppercase; }
+        .mem-content p, .mem-content li { color: #5d4037; font-size: 0.85rem; margin-bottom: 15px; }
+        .code-block { background: #2c2c2c; color: #a6e22e; padding: 20px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 0.8rem; border: 4px solid #000; margin: 20px 0; overflow-x: auto; }
+        .section-box { background: rgba(255, 255, 255, 0.5); padding: 20px; border: 2px solid #dcb586; margin-bottom: 30px; }
+    </style>
+</head>
+
+<body class="flappy-theme">
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo"><span>Stepan Kapustiak</span></a>
+            <ul class="nav-links">
+                <li><a href="cv.html" data-i18n="nav_cv">Curriculum</a></li>
+                <li><a href="portfolio-assignments.html" data-i18n="nav_portfolio">Prácticas</a></li>
+                <li><a href="portfolio-syllabus.html" data-i18n="nav_syllabus">Temario</a></li>
+                <li><a href="cover-letter.html" data-i18n="nav_contact">Carta</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button class="lang-btn" data-lang="es">ES</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ua">UA</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="cv-container reveal" style="text-align: center; padding: 80px 20px; border-bottom: 10px solid #76b400;">
+            <h1 data-i18n="mem_title" style="font-size: 2rem; margin-bottom: 20px;">Memoria del Proyecto</h1>
+            <div style="font-family: var(--font-pixel); line-height: 2;">
+                <p><strong>PROYECTO:</strong> PORTFOLIO DIGITAL "FLAPPY STYLE"</p>
+                <p><strong>AUTOR:</strong> STEPAN KAPUSTIAK</p>
+                <p><strong>CENTRO:</strong> CES JUAN PABLO II</p>
+                <p><strong>FECHA:</strong> <span id="current-date"></span></p>
+            </div>
+            <div style="margin-top: 50px;">
+                <button class="mc-btn" onclick="window.print()" data-i18n="mem_download">Descargar Memoria PDF</button>
+            </div>
+        </section>
+
+        <article class="cv-container reveal mem-content">
+            
+            <section class="section-box">
+                <h2 data-i18n="mem_abstract_title">2. Resumen (Abstract)</h2>
+                <p data-i18n="mem_abstract_text">Este proyecto consiste en el diseño y desarrollo de un portfolio digital interactivo con una estética inspirada en el videojuego Flappy Bird. El desarrollo se ha centrado en la creación de una interfaz limpia y profesional utilizando exclusivamente HTML, CSS y JavaScript. Los objetivos principales alcanzados incluyen la implementación de un sistema multi-idioma dinámico, una estructura responsiva sin dependencia de recursos gráficos externos y una navegación intuitiva orientada a la presentación de habilidades técnicas en el sector tecnológico.</p>
+            </section>
+
+            <section class="section-box">
+                <h2>3. Índice</h2>
+                <ul style="list-style: decimal inside;">
+                    <li>Portada</li>
+                    <li>Resumen</li>
+                    <li>Índice</li>
+                    <li>Introducción</li>
+                    <li>Metodología</li>
+                    <li>Desarrollo e Implementación</li>
+                    <li>Resultados</li>
+                    <li>Discusión técnica</li>
+                    <li>Conclusiones</li>
+                    <li>Bibliografía</li>
+                </ul>
+            </section>
+
+            <section class="section-box">
+                <h2 data-i18n="mem_intro">4. Introducción</h2>
+                <p data-i18n="mem_intro_text">En el actual mercado laboral tecnológico, la diferenciación es clave. Este proyecto nace de la necesidad de presentar una trayectoria académica de forma creativa. Se ha seleccionado la temática de 8-bits por gusto personal, sino como un reto de maquetación: construir una identidad visual potente basándose únicamente en código CSS. El objetivo específico es demostrar que el dominio de las hojas de estilo permite crear experiencias memorables sin necesidad de sobrecargar la web con imágenes pesadas.</p>
+                <h3>Justificación</h3>
+                <p>Se ha seleccionado la estética de 8 bits para demostrar que el diseño web puede ser altamente creativo y funcional utilizando únicamente herramientas nativas de maquetación.</p>
+            </section>
+
+            <section class="section-box">
+                <h2 data-i18n="mem_method_title">5. Metodología</h2>
+                <p data-i18n="mem_method_text">El proceso de trabajo siguió un flujo estructurado: primero, se realizó una fase de investigación analizando portfolios en plataformas como TikTok para identificar tendencias de micro-animaciones. Segundo, se definieron los colores y fuentes pixeladas. Tercero, se construyó la estructura semántica en HTML5. Finalmente, se programó la lógica en JavaScript para la gestión de idiomas (i18n) y la interactividad de los modales, utilizando herramientas como Visual Studio Code y siguiendo las enseñanzas de canales especializados como Kodeset.</p>
+            </section>
+
+            <section class="section-box">
+                <h2 data-i18n="mem_development_title">6. Desarrollo o Implementación</h2>
+                <p data-i18n="mem_development_text">La implementación técnica se apoya en tres pilares: 1. Flexbox y Grid para una simetría perfecta en las secciones de proyectos. 2. Variables CSS (:root) para gestionar una paleta de colores coherente.</p>
+                
+                <h3>Propiedades CSS Destacadas</h3>
+                <p>Para lograr la simetría y el diseño sin imágenes, se implementaron las siguientes reglas:</p>
+                
+                <div class="code-block">.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}</div>
+                <div class="code-block">:root {
+    --fb-grass: #76b400;
+    --fb-pipe: #73c32a;
+    --font-pixel: 'Press Start 2P';
+}</div>
+            </section>
+
+            <section class="section-box">
+                <h2 data-i18n="mem_results_title">7. Resultados</h2>
+                <p data-i18n="mem_results_text">Se ha obtenido una plataforma web funcional que integra: un CV completo, una carta de presentación formal y un portfolio de prácticas.</p>
+            </section>
+
+            <section class="section-box">
+                <h2 data-i18n="mem_discussion_title">8. Discusión</h2>
+                <p data-i18n="mem_discussion_text">Durante el desarrollo, el mayor desafío fue lograr que la estética de videojuego. Se decidió eliminar las imágenes de los proyectos para evitar distracciones visuales y la estructura de la información. La simetría de las columnas fue el punto más complejo.</p>
+            </section>
+
+            <section class="section-box">
+                <h2 data-i18n="mem_conclusions_title">9. Conclusiones</h2>
+                <p data-i18n="mem_conclusions_text">Este proyecto ha servido para consolidar conocimientos avanzados de CSS y la lógica de programación en JS.</p>
+            </section>
+
+            <section class="section-box">
+                <h2 data-i18n="mem_biblio_title">10. Bibliografía</h2>
+                <p data-i18n="mem_biblio_text"></p>
+                <ul style="list-style: square inside;">
+                    <li>Kodeset - bottones, animaciones</li>
+                    <li>Yotube - Lógica de componentes</li>
+                    <li>TikTok - Inspiración en micro-animaciones UI</li>
+                </ul>
+            </section>
+
+        </article>
+    </main>
+
+    <footer style="margin-top: 50px;">
+        <p data-i18n="footer_rights">&copy; 2026 Stepan Kapustiak.</p>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
